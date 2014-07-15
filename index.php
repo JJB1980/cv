@@ -84,6 +84,7 @@ Resum&eacute; - John Bowden
  					<li><a href="https://stadtbibliothek.linz.at/libero/WebOpac.cls" target="_blank">Linz</a></li>
 
 					<li><a href="../shop/?client=1" target="_blank">Under Development: Shop</a></li>
+					<li><a href="../shop2" target="_blank">As AngularJS Store app</a></li>
 					<li><a href="../lookup/" target="_blank">Angular: Stock Lookup</a></li>
               </ul>
             </li>
