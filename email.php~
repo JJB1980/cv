@@ -1,0 +1,51 @@
+<?php
+
+$fromEmail = $_REQUEST["fromEmail"];
+$name = $_REQUEST["fromName"];
+$msg = $_REQUEST["emailContent"];
+
+if ($fromEmail == "") {
+	echo "Missing Email Address.";
+	exit;
+}
+
+if ($name == "") {
+	echo "Missing Name.";
+	exit;
+}
+
+if ($msg == "") {
+	echo "Missing Details.";
+	exit;
+}
+
+	$mysqli=new mysqli("localhost","jjbsw_root","fender71") or die(".........");
+	$mysqli->select_db("jjbswcom_admin");	
+	
+	$sql = "insert into Messages (FromName,FromEmail,Message,DateSent) 
+				values ('".$name."','".$fromEmail."','".$msg."','".date("Y-m-d")."')";
+	
+	//echo $sql; exit;	
+
+	if ($mysqli->query($sql)) {
+		echo "Message Sent";
+	} else {
+		echo "Unable to send Message (".$mysqli->error.")";
+	}	
+
+$msg .= " --- From: ". $name . " - " . $fromEmail;
+ 
+// use wordwrap() if lines are longer than 70 characters
+$msg = wordwrap($msg,70);
+
+$to = "jjbowden1980@hotmail.com";
+
+//$headers = "From: ".$fromEmail;
+$headers = "From: webmaster@jjbsw.com";
+
+// send email
+mail($to,"Website Enquiry",$msg,$headers);
+
+//echo "Email Sent.";
+exit;
+?>

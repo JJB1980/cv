@@ -1,0 +1,157 @@
+
+body {
+	background-color: #F0F0F5;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+
+h1 {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 1em;
+	font-style: normal;
+	font-weight: bold;
+}
+
+h2 {
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 0.9em;
+}
+
+p {
+
+	font-size: 0.8em;
+	margin: 1em;
+}
+
+ul {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-size: 0.8em;	
+}
+
+li {
+	margin-bottom: 0.5em;
+}
+
+a {
+	text-decoration: none;
+	
+}
+
+table {
+	margin: 1em;
+}
+
+#content {
+	background-color: white;
+	margin-left: 10em;
+	width: 50em;
+	border: solid 1pt #E0E0EB;
+	 overflow: auto;
+ 	 top: 4em;
+	 position: relative;
+}
+
+#pageHeader {
+	width: 100%;
+	text-align: center;
+}
+
+.sectionHeader {
+	width: 100%;
+	/*background-color: #33334C;*/
+	background-color: #666699;
+	
+	color: white;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 1em;
+	
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 0.9em;
+}
+
+
+#skillContainer {
+	width: 100%;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 0.9em;
+}
+
+.detailsTable {
+	width: 100%;
+	margin: 1em;
+}
+
+.detailsTable thead {
+	font-family: "Arial Black", Gadget, sans-serif;	
+	color: #9494B8;
+	font-size: 0.9em;
+	padding: 0.5em;
+}
+
+.detailsTable tbody {
+
+	font-size: 0.8em;
+
+}
+
+.detailsTable tbody td {
+	padding: 0.5em;
+}
+
+#sendEmail {
+	font-size: 0.7em;
+	
+} 
+
+#sendEmail table td {
+	padding: 0.5em;
+}
+
+.ui-dialog-title {
+	font-size: 0.7em;
+}
+.ui-button-text {
+	font-size: 0.7em;
+}
+
+/*
+.navbar {
+	background-color: #1A1A66;
+}
+.active {
+	background-color: #0F0F3D;
+}
+*/
+
+.track3 {
+    width: 10px;
+    background: rgba(0, 0, 0, 0);
+    margin-right: 2px;
+    border-radius: 10px;
+    -webkit-transition: background 250ms linear;
+    transition: background 250ms linear;
+    left: 10.6em;
+}
+
+.track3:hover,
+.track3.dragging {
+    background: #d9d9d9; /* Browsers without rgba support */
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.handle3 {
+    width: 7px;
+    right: 0;
+    background: #999;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 7px;
+    -webkit-transition: width 250ms;
+    transition: width 250ms;
+}
+
+.track3:hover .handle3,
+.track3.dragging .handle3 {
+    width: 10px;
+}
